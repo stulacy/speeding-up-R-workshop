@@ -1,0 +1,11 @@
+.Rproj.user
+*.Rproj
+.Rhistory
+.RData
+.Ruserdata
+*.csv
+*.duckdb
+*.sql
+slides_cache/
+slides_files/
+
