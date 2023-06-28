@@ -15,6 +15,7 @@ format:
     navigation-mode: linear
     width: 1280
     height: 700
+    embed-resources: true
 ---
 
 ## Introduction
@@ -1552,9 +1553,9 @@ res_5mil |>
 ```{r rcpp-1, echo=TRUE}
 library(Rcpp)
 cppFunction("
-// The function definition syntax is:
-RETURN_TYPE functionName(INPUT_TYPE input, ...)
 double sumRcpp(NumericVector x) {
+  // The function definition syntax is:
+  // RETURN_TYPE functionName(INPUT_TYPE input, ...)
   int n = x.size();  // R objects have their own type (NumericVector) with useful attributes
   double total = 0;  // Need to instantiate variables before use
   for (int i = 0; i < n; i++) {  // C++ indexes start at 0
